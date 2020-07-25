@@ -24,10 +24,10 @@ los parametros basicos para configurar la api estan en el archivo  `.env`
 localhost:3700/api # GET'detalle de api'
 
 Obtener Colores
-localhost:3700/api/color # GET 'lista de colores formato JSON'
-localhost:3700/api/color?format=xml # GET 'lista de colores formato XML'
-localhost:3700/api/color?page=2 # GET 'lista de colores formato JOSN, pagina 2'
-localhost:3700/api/color?page=2&format=xml # GET 'lista de colores formato xml, pagina 2'
+localhost:3700/api/color            #GET 'lista de colores formato JSON'
+localhost:3700/api/color?format=xml         #GET 'lista de colores formato XML'
+localhost:3700/api/color?page=2          #GET 'lista de colores formato JOSN, pagina 2'
+localhost:3700/api/color?page=2&format=xml          #GET 'lista de colores formato xml, pagina 2'
 
 Detalle de color
 localhost:3700/api/color/:id_color # GET 'detalle de color en formato json'

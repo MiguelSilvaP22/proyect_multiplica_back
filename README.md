@@ -5,7 +5,7 @@ MongoBD como base de datos y
 Utlizando la libreria [Eslint](https://eslint.org/), para realzar pruebas.
 
 
-## [DEMO](http://167.99.106.28:3700)
+## [DEMO](http://167.99.106.28:3700/api)
 
 ## Inicio de Sistema
 
@@ -21,7 +21,7 @@ los parametros basicos para configurar la api estan en el archivo  `.env`
 ## Funcionamiento de api
 
 ```
-#GET localhost:3700/api 'detalle de api'
+#GET localhost:3700/api                             'detalle de api'
 
 Obtener Colores
 #GET localhost:3700/api/color                       'lista de colores formato JSON'

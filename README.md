@@ -20,22 +20,20 @@ los parametros basicos para configurar la api estan en el archivo  `.env`
 
 ## Funcionamiento de api
 
-```cmd
-localhost:3700/api # GET'detalle de api'
+```
+#GET localhost:3700/api 'detalle de api'
 
 Obtener Colores
-localhost:3700/api/color            #GET 'lista de colores formato JSON'
-localhost:3700/api/color?format=xml         #GET 'lista de colores formato XML'
-localhost:3700/api/color?page=2          #GET 'lista de colores formato JOSN, pagina 2'
-localhost:3700/api/color?page=2&format=xml          #GET 'lista de colores formato xml, pagina 2'
+#GET localhost:3700/api/color                       'lista de colores formato JSON'
+#GET localhost:3700/api/color?format=xml            'lista de colores formato XML'
+#GET localhost:3700/api/color?page=2                'lista de colores formato JOSN, pagina 2'
+#GET localhost:3700/api/color?page=2&format=xml     'lista de colores formato xml, pagina 2'
 
 Detalle de color
-localhost:3700/api/color/:id_color # GET 'detalle de color en formato json'
-localhost:3700/api/color/:id_color?format=xml # GET 'detalle de color en formato xml'
+#GET localhost:3700/api/color/:id_color             'detalle de color en formato json'
+#GET localhost:3700/api/color/:id_color?format=xml  'detalle de color en formato xml'
 
 Crear nuevo color
-localhost:3700/api/color # POST 'Creación de color, ejemplo body {id:12,name:honeysuckle, year:2011, color:#D94F70, pantone_value:18-2120,
-}
-
+#POST localhost:3700/api/color                      'Creación de color, ejemplo body {id:12,name:honeysuckle, year:2011, color:#D94F70, pantone_value:18-2120}'
 
 ```

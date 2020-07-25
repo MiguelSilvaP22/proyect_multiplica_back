@@ -4,6 +4,7 @@ const app = express();
 
 // load routes
 const ColorsRoutes = require('./routes/color.route');
+const IndexRoute = require('./routes/index.route');
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
@@ -21,5 +22,6 @@ app.use((req, res, next) => {
 });
 
 app.use(`/api/`, ColorsRoutes);
+app.use(`/api/`, IndexRoute);
 
 module.exports = app;

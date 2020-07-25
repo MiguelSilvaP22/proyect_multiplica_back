@@ -14,6 +14,7 @@ function getColors(req, res) {
   Color.countDocuments().exec((err, total) => {
     page.total_recors = total;
     page.page = !isNaN(req.query.page) ? parseInt(req.query.page) : 1;
+    page.total_pages =  page.total_recors / page.page_records
     const skips = page.page_records * (page.page - 1);
     Color.find({}, { '_id': false, '__v': false, 'color': false, 'pantone_value': false }).skip(skips).limit(page.page_records)
       .exec((err, colors) => {
